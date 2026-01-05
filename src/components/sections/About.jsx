@@ -4,7 +4,7 @@ export const About = () => {
   const frontendSkills = [
     "React",
     "Vue",
-    "TypeScript",
+    "JavaScript",
     "TailwindCSS",
     "Svelte",
   ];
