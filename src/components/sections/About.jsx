@@ -38,27 +38,36 @@ export const About = () => {
           </h2>
 
           <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all">
-            {/* Intro */}
-            <p className="text-gray-300 mb-6">
-              I’m <strong>Junaed Mustofa Chowdhury</strong>, a passionate{" "}
-              <strong>Full‑Stack Developer</strong>, Accessibility Advocate, and
-              Freelance Strategist based in Bangladesh, working remotely with
-              clients worldwide. My focus is on building performant, accessible,
-              and user‑friendly applications that empower businesses and delight
-              users. I thrive on technical rigor, clear communication, and
-              delivering solutions that scale globally.
-            </p>
+            {/* Intro with Image */}
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8 mb-8">
+              <img
+                src="/junaed.JPEG"
+                alt="Junaed Mustofa Chowdhury"
+                className="w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-xl object-cover shadow-lg border-4 border-blue-400"
+              />
+              <div className="text-center md:text-left">
+                <p className="text-gray-300 mb-2">
+                  I’m <strong>Junaed Mustofa Chowdhury</strong>, a passionate{" "}
+                  <strong>Full‑Stack Developer</strong>, Accessibility Advocate, and
+                  Freelance Strategist based in Bangladesh, working remotely with
+                  clients worldwide. My focus is on building performant, accessible,
+                  and user‑friendly applications that empower businesses and delight
+                  users. I thrive on technical rigor, clear communication, and
+                  delivering solutions that scale globally.
+                </p>
 
-            <p className="text-gray-300 mb-6">
-              Beyond coding, I specialize in <strong>branding precision</strong>,
-              <strong>UI reliability</strong>, and <strong>workflow clarity</strong>.
-              I adapt instantly to client feedback, ensuring every asset—whether
-              it’s a product card, checkout flow, or portfolio page—is visually
-              balanced and context‑perfect. My projects often integrate modern
-              deployment workflows (Vercel, Netlify, GitHub Pages) and emphasize
-              accessibility standards so that applications are inclusive for all
-              users.
-            </p>
+                <p className="text-gray-300 mb-6">
+                  Beyond coding, I specialize in <strong>branding precision</strong>,
+                  <strong>UI reliability</strong>, and <strong>workflow clarity</strong>.
+                  I adapt instantly to client feedback, ensuring every asset—whether
+                  it’s a product card, checkout flow, or portfolio page—is visually
+                  balanced and context‑perfect. My projects often integrate modern
+                  deployment workflows (Vercel, Netlify, GitHub Pages) and emphasize
+                  accessibility standards so that applications are inclusive for all
+                  users.
+                </p>
+              </div>
+            </div>
 
             {/* Work Experience + Education side by side */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -89,7 +98,6 @@ export const About = () => {
                 <ul className="text-white list-disc list-inside space-y-2">
                   <li><strong>HBO‑ICT (Bachelor’s)</strong> – Fontys University of Applied Sciences, Netherlands (2016–2021)</li>
                   <li><strong>MBA</strong> – Stamford University, Dhaka (2008–2011)</li>
-                  {/* BA, HSC, SSC removed */}
                 </ul>
               </div>
             </div>
