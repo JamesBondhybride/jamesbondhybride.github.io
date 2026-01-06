@@ -29,7 +29,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center pt-8 pb-16 sm:pt-12 sm:pb-20 md:pt-16"
+      className="min-h-screen flex items-center justify-center relative"
     >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
@@ -43,7 +43,7 @@ export const About = () => {
               <img
                 src="/junaed.JPEG"
                 alt="Junaed Mustofa Chowdhury"
-                className="w-40 mx-auto h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-xl object-cover shadow-lg border-4 border-blue-400"
+                className="w-40 m-auto h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-xl object-cover shadow-lg border-4 border-blue-400"
               />
               <div className="text-center md:text-left">
                 <p className="text-gray-300 mb-2">
