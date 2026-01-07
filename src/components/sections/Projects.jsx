@@ -22,136 +22,35 @@ export const Projects = () => {
 
               <h4 className="text-sm font-semibold text-blue-400 mb-2">Frontend:</h4>
               <div className="flex flex-wrap gap-2 mb-4">
-                {[
-                  "React 19",
-                  "Vite",
-                  "TailwindCSS",
-                  "Axios",
-                  "Redux Toolkit",
-                  "Firebase",
-                ].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition"
-                  >
-                    {tech}
-                  </span>
+                {["React 19","Vite","TailwindCSS","Axios","Redux Toolkit","Firebase"].map((tech) => (
+                  <span key={tech} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition">{tech}</span>
                 ))}
               </div>
 
               <h4 className="text-sm font-semibold text-green-400 mb-2">Backend:</h4>
               <div className="flex flex-wrap gap-2 mb-4">
-                {[
-                  "Node.js",
-                  "Express 5",
-                  "MongoDB",
-                  "Mongoose",
-                  "JWT",
-                  "bcryptjs",
-                  "Cloudinary",
-                  "Multer",
-                  "Nodemailer",
-                  "Socket.io",
-                ].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 transition"
-                  >
-                    {tech}
-                  </span>
+                {["Node.js","Express 5","MongoDB","Mongoose","JWT","bcryptjs","Cloudinary","Multer","Nodemailer","Socket.io"].map((tech) => (
+                  <span key={tech} className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 transition">{tech}</span>
                 ))}
               </div>
 
-              <a
-                href="https://food-delivery-38i7.onrender.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors my-4 block"
-              >
+              <a href="https://food-delivery-38i7.onrender.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors my-4 block">
                 Live Preview →
               </a>
-            </div>
 
-            {/* Food Ordering App */}
-            <div className="glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Food Ordering App</h3>
-              <p className="text-gray-400 mb-4">
-                Full-stack food ordering system with product listings, cart management, and secure checkout flow.
-              </p>
-
-              <h4 className="text-sm font-semibold text-blue-400 mb-2">Frontend:</h4>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "Netlify"].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition"
-                  >
-                    {tech}
-                  </span>
-                ))}
+              {/* Demo video */}
+              <h4 className="text-sm font-semibold text-red-400 mb-2">Demo video</h4>
+              <div className="aspect-video mt-2">
+                <iframe
+                  src="https://www.youtube.com/embed/rGgPFuePOs8?si=iKhyw7EZyXlQZaSS"
+                  title="Food Delivery System Demo Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  className="w-full h-full rounded-lg"
+                ></iframe>
               </div>
-
-              <h4 className="text-sm font-semibold text-green-400 mb-2">Backend:</h4>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["Node.js", "MongoDB"].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 transition"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <a
-                href="https://food-ordering-app-junaed.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors my-4 block"
-              >
-                Live Preview →
-              </a>
-            </div>
-
-            {/* Food Delivery App (Vercel) */}
-            <div className="glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Food Delivery App (Vercel)</h3>
-              <p className="text-gray-400 mb-4">
-                Deployment of the food delivery frontend, optimized for Vercel hosting with fast builds and CDN.
-              </p>
-
-              <h4 className="text-sm font-semibold text-blue-400 mb-2">Frontend:</h4>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "TailwindCSS", "Vercel"].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <h4 className="text-sm font-semibold text-green-400 mb-2">Backend:</h4>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["Node.js", "Express", "MongoDB"].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 transition"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <a
-                href="https://food-delivery-nine-hazel.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors my-4 block"
-              >
-                Live Preview →
-              </a>
             </div>
 
             {/* GearGrid */}
@@ -163,53 +62,75 @@ export const Projects = () => {
 
               <h4 className="text-sm font-semibold text-blue-400 mb-2">Frontend:</h4>
               <div className="flex flex-wrap gap-2 mb-4">
-                {[
-                  "Next.js 15",
-                  "React 19",
-                  "JavaScript",
-                  "TailwindCSS",
-                  "Axios",
-                  "Clerk",
-                  "Redux Toolkit",
-                  "Vercel",
-                ].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition"
-                  >
-                    {tech}
-                  </span>
+                {["Next.js 15","React 19","JavaScript","TailwindCSS","Axios","Clerk","Redux Toolkit","Vercel"].map((tech) => (
+                  <span key={tech} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition">{tech}</span>
                 ))}
               </div>
 
               <h4 className="text-sm font-semibold text-green-400 mb-2">Backend:</h4>
               <div className="flex flex-wrap gap-2 mb-4">
-                {[
-                  "Node.js",
-                  "Express 5",
-                  "MongoDB",
-                  "Mongoose",
-                  "Inngest",
-                  "Cloudinary",
-                  "JWT",
-                ].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 transition"
-                  >
-                    {tech}
-                  </span>
+                {["Node.js","Express 5","MongoDB","Mongoose","Inngest","Cloudinary","JWT"].map((tech) => (
+                  <span key={tech} className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 transition">{tech}</span>
                 ))}
               </div>
 
-              <a
-                href="https://geargrid-eight.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors my-4 block"
-              >
+              <a href="https://geargrid-eight.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors my-4 block">
                 Live Preview →
               </a>
+
+              {/* Demo video */}
+              <h4 className="text-sm font-semibold text-red-400 mb-2">Demo video</h4>
+              <div className="aspect-video mt-2">
+                <iframe
+                  src="https://www.youtube.com/embed/R9yLKyVkS-Y?si=xUD8dNUT0U5E04tF"
+                  title="GearGrid Demo Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  className="w-full h-full rounded-lg"
+                ></iframe>
+              </div>
+            </div>
+
+            {/* Food Delivery App (Vercel) */}
+            <div className="glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)] transition-all">
+              <h3 className="text-xl font-bold mb-2">Food Delivery App (Vercel)</h3>
+              <p className="text-gray-400 mb-4">
+                Deployment of the food delivery frontend, optimized for Vercel hosting with fast builds and CDN.
+              </p>
+
+              <h4 className="text-sm font-semibold text-blue-400 mb-2">Frontend:</h4>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["React","TailwindCSS","Vercel"].map((tech) => (
+                  <span key={tech} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition">{tech}</span>
+                ))}
+              </div>
+
+              <h4 className="text-sm font-semibold text-green-400 mb-2">Backend:</h4>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["Node.js","Express","MongoDB"].map((tech) => (
+                  <span key={tech} className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 transition">{tech}</span>
+                ))}
+              </div>
+
+              <a href="https://food-delivery-nine-hazel.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors my-4 block">
+                Live Preview →
+              </a>
+
+              {/* Demo video */}
+              <h4 className="text-sm font-semibold text-red-400 mb-2">Demo video</h4>
+              <div className="aspect-video mt-2">
+                <iframe
+                  src="https://www.youtube.com/embed/rGgPFuePOs8?si=iKhyw7EZyXlQZaSS"
+                  title="Food Delivery App (Vercel) Demo Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  className="w-full h-full rounded-lg"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
