@@ -8,6 +8,7 @@ import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
 import "./index.css";
 import { Contact } from "./components/sections/Contact";
+import ShareButtons from "./components/sections/ShareButtons";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -24,6 +25,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
+        <ShareButtons/>
       </div>
     </>
   );
