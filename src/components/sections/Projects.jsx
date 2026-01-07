@@ -166,7 +166,7 @@ export const Projects = () => {
                 {[
                   "Next.js 15",
                   "React 19",
-                  "TypeScript",
+                  "JavaScript",
                   "TailwindCSS",
                   "Axios",
                   "Clerk",
