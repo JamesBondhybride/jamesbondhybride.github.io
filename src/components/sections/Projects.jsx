@@ -25,12 +25,47 @@ export const Projects = () => {
               <h4 className="text-sm font-semibold text-blue-400 mb-2">
                 Frontend:
               </h4>
-              {/* ...frontend tech stack unchanged... */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                {[
+                  "React 19",
+                  "Next.js 15",
+                  "TailwindCSS",
+                  "Axios",
+                  "Redux Toolkit",
+                  "Clerk",
+                  "Vercel",
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
 
               <h4 className="text-sm font-semibold text-green-400 mb-2">
                 Backend:
               </h4>
-              {/* ...backend tech stack unchanged... */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                {[
+                  "Node.js",
+                  "Express 5",
+                  "MongoDB",
+                  "Mongoose",
+                  "JWT",
+                  "Cloudinary",
+                  "Multer",
+                  "bcryptjs",
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="bg-green-500/10 text-green-500 py-1 px-3 rounded-full text-sm hover:bg-green-500/20 transition"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
 
               <div className="space-y-2 my-4">
                 <a
@@ -58,7 +93,7 @@ export const Projects = () => {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/Ruc1hIyzR0s?si=LH4vv4ksDN0GdEVk"
+                  src="https://www.youtube.com/embed/Ruc1hIyzR0s?si=5Gk9vSQIt9iyVetW"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
