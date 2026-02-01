@@ -9,6 +9,7 @@ import { Projects } from "./components/sections/Projects";
 import "./index.css";
 import { Contact } from "./components/sections/Contact";
 import ShareButtons from "./components/sections/ShareButtons";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -27,6 +28,7 @@ function App() {
         <Contact />
         <ShareButtons/>
       </div>
+      <Analytics />
     </>
   );
 }
